@@ -1,0 +1,6 @@
+@Projeto_Nutri_HostAddress = http://localhost:5042
+
+GET {{Projeto_Nutri_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
