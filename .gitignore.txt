@@ -1,0 +1,26 @@
+## Ignore arquivos e pastas do Visual Studio
+.vs/
+*.user
+*.suo
+
+## Ignore arquivos de build
+bin/
+obj/
+
+## Arquivos de log e temporários
+*.log
+*.tmp
+
+## Dados do sistema
+*.DS_Store
+Thumbs.db
+
+## Arquivos de cache do Rider/ReSharper
+.idea/
+*.sln.iml
+
+## Arquivos de publicação
+*.Publish.xml
+
+## Arquivos de backup
+*~
