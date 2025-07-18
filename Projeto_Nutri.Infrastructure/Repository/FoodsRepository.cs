@@ -17,29 +17,29 @@ namespace Projeto_Nutri.Infrastructure.Repository
             _context = context;
         }
 
-        public Foods ObterPorId(int id)
+        public Foods GetById(int id)
         {
             return Context.Foods.FirstOrDefault(f => f.Id == id);
         }
 
-        public IEnumerable<Foods> ObterTodos()
+        public IEnumerable<Foods> GetAll()
         {
             return Context.Foods.ToList();
         }
 
-        public void Adicionar(Foods food)
+        public void Create(Foods food)
         {
             Context.Foods.Add(food);
             Context.SaveChanges();
         }
 
-        public void Atualizar(Foods food)
+        public void Update(Foods food)
         {
             Context.Foods.Update(food);
             Context.SaveChanges();
         }
 
-        public void Remover(int id)
+        public void Delete(int id)
         {
             var food = Context.Foods.FirstOrDefault(f => f.Id == id);
             if (food != null)

@@ -4,10 +4,10 @@ namespace Projeto_Nutri.Infrastructure.IRepository
 {
     public interface IFoodsRepository
     {
-        Foods ObterPorId(int id);
-        IEnumerable<Foods> ObterTodos();
-        void Adicionar(Foods food);
-        void Atualizar(Foods food);
-        void Remover(int id);
+        Foods GetById(int id);
+        IEnumerable<Foods> GetAll();
+        void Create(Foods food);
+        void Update(Foods food);
+        void Delete(int id);
     }
 }

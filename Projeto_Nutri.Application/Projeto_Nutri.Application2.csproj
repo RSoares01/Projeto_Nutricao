@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Projeto_Nutri.Domain\Projeto_Nutri.Domain.csproj" />
+    <ProjectReference Include="..\Projeto_Nutri.Infrastructure\Projeto_Nutri.Infrastructure.csproj" />
+    <ProjectReference Include="..\Projeto_Nutri\Projeto_Nutri.API.csproj" />
+  </ItemGroup>
+
+</Project>

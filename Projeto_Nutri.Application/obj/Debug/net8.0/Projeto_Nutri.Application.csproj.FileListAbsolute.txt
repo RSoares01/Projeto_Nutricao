@@ -10,3 +10,17 @@ C:\Users\Rafael\Documents\ProjetosGIT\Projeto_Nutricao\Projeto_Nutri.Application
 C:\Users\Rafael\Documents\ProjetosGIT\Projeto_Nutricao\Projeto_Nutri.Application\obj\Debug\net8.0\refint\Projeto_Nutri.Application.dll
 C:\Users\Rafael\Documents\ProjetosGIT\Projeto_Nutricao\Projeto_Nutri.Application\obj\Debug\net8.0\Projeto_Nutri.Application.pdb
 C:\Users\Rafael\Documents\ProjetosGIT\Projeto_Nutricao\Projeto_Nutri.Application\obj\Debug\net8.0\ref\Projeto_Nutri.Application.dll
+C:\Users\Rafael\Documents\ProjetosGIT\Projeto_Nutricao\Projeto_Nutri.Application\obj\Debug\net8.0\Projeto_Nutri.Application.csproj.AssemblyReference.cache
+C:\Users\Rafael\Documents\ProjetosGIT\Projeto_Nutricao\Projeto_Nutri.Application\bin\Debug\net8.0\Projeto_Nutri.API.deps.json
+C:\Users\Rafael\Documents\ProjetosGIT\Projeto_Nutricao\Projeto_Nutri.Application\bin\Debug\net8.0\Projeto_Nutri.API.runtimeconfig.json
+C:\Users\Rafael\Documents\ProjetosGIT\Projeto_Nutricao\Projeto_Nutri.Application\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Rafael\Documents\ProjetosGIT\Projeto_Nutricao\Projeto_Nutri.Application\bin\Debug\net8.0\appsettings.json
+C:\Users\Rafael\Documents\ProjetosGIT\Projeto_Nutricao\Projeto_Nutri.Application\bin\Debug\net8.0\Projeto_Nutri.API.staticwebassets.endpoints.json
+C:\Users\Rafael\Documents\ProjetosGIT\Projeto_Nutricao\Projeto_Nutri.Application\bin\Debug\net8.0\Projeto_Nutri.API.exe
+C:\Users\Rafael\Documents\ProjetosGIT\Projeto_Nutricao\Projeto_Nutri.Application\bin\Debug\net8.0\Projeto_Nutri.API.dll
+C:\Users\Rafael\Documents\ProjetosGIT\Projeto_Nutricao\Projeto_Nutri.Application\bin\Debug\net8.0\Projeto_Nutri.Domain.dll
+C:\Users\Rafael\Documents\ProjetosGIT\Projeto_Nutricao\Projeto_Nutri.Application\bin\Debug\net8.0\Projeto_Nutri.Infrastructure.dll
+C:\Users\Rafael\Documents\ProjetosGIT\Projeto_Nutricao\Projeto_Nutri.Application\bin\Debug\net8.0\Projeto_Nutri.Domain.pdb
+C:\Users\Rafael\Documents\ProjetosGIT\Projeto_Nutricao\Projeto_Nutri.Application\bin\Debug\net8.0\Projeto_Nutri.Infrastructure.pdb
+C:\Users\Rafael\Documents\ProjetosGIT\Projeto_Nutricao\Projeto_Nutri.Application\bin\Debug\net8.0\Projeto_Nutri.API.pdb
+C:\Users\Rafael\Documents\ProjetosGIT\Projeto_Nutricao\Projeto_Nutri.Application\obj\Debug\net8.0\Projeto_.2D323237.Up2Date

@@ -1,0 +1,81 @@
+[
+  {
+    "ContainingType": "Projeto_Nutri.API.Controllers.FoodsController",
+    "Method": "GetAll",
+    "RelativePath": "foods",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Projeto_Nutri.API.Controllers.FoodsController",
+    "Method": "Create",
+    "RelativePath": "foods",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "foods",
+        "Type": "Projeto_Nutri.Application.DTO.FoodsDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Projeto_Nutri.API.Controllers.FoodsController",
+    "Method": "GetById",
+    "RelativePath": "foods/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Projeto_Nutri.API.Controllers.FoodsController",
+    "Method": "Update",
+    "RelativePath": "foods/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedFood",
+        "Type": "Projeto_Nutri.Application.DTO.FoodsDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Projeto_Nutri.API.Controllers.FoodsController",
+    "Method": "Delete",
+    "RelativePath": "foods/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
