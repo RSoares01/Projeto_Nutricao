@@ -7,7 +7,6 @@
         public decimal Caloriaspor100g { get; set; }
         public DateTime DataCriacao { get; set; }
 
-        // Construtor personalizado
         public Foods(string nome, decimal caloriasPor100g, DateTime dataCriacao)
         {
             Nome = nome;

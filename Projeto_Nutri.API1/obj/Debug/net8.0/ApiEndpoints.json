@@ -27,6 +27,27 @@
   },
   {
     "ContainingType": "Projeto_Nutri.API.Controllers.FoodsController",
+    "Method": "Update",
+    "RelativePath": "foods",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "updatedFood",
+        "Type": "Projeto_Nutri.Application.DTO.FoodsDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Projeto_Nutri.API.Controllers.FoodsController",
     "Method": "GetById",
     "RelativePath": "foods/{id}",
     "HttpMethod": "GET",
@@ -43,9 +64,9 @@
   },
   {
     "ContainingType": "Projeto_Nutri.API.Controllers.FoodsController",
-    "Method": "Update",
+    "Method": "Delete",
     "RelativePath": "foods/{id}",
-    "HttpMethod": "PUT",
+    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -53,19 +74,77 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
-      },
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Projeto_Nutri.API.Controllers.PatientsController",
+    "Method": "GetAll",
+    "RelativePath": "patients",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Projeto_Nutri.API.Controllers.PatientsController",
+    "Method": "Create",
+    "RelativePath": "patients",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
       {
-        "Name": "updatedFood",
-        "Type": "Projeto_Nutri.Application.DTO.FoodsDTO",
+        "Name": "patients",
+        "Type": "Projeto_Nutri.Application.DTO.PatientsDTO",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Projeto_Nutri.API.Controllers.FoodsController",
+    "ContainingType": "Projeto_Nutri.API.Controllers.PatientsController",
+    "Method": "Update",
+    "RelativePath": "patients",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "updatedPatient",
+        "Type": "Projeto_Nutri.Application.DTO.PatientsDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Projeto_Nutri.API.Controllers.PatientsController",
+    "Method": "GetById",
+    "RelativePath": "patients/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Projeto_Nutri.API.Controllers.PatientsController",
     "Method": "Delete",
-    "RelativePath": "foods/{id}",
+    "RelativePath": "patients/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,

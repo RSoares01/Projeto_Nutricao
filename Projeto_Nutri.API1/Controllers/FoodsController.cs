@@ -78,7 +78,7 @@ namespace Projeto_Nutri.API.Controllers
         }
 
         // PUT /foods/{id}
-        [HttpPut("{id}")]
+        [HttpPut]
         public IActionResult Update(int id, [FromBody] FoodsDTO updatedFood)
         {
             if (updatedFood == null)

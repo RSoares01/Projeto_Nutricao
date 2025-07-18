@@ -14,6 +14,7 @@ namespace Projeto_Nutri.Infrastructure.Context
         }
 
         public DbSet<Foods> Foods { get; set; }
+        public DbSet<Patients> Patients { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -22,9 +23,11 @@ namespace Projeto_Nutri.Infrastructure.Context
 
             //tabelas 
             modelBuilder.Entity<Foods>().ToTable("Foods");
+            modelBuilder.Entity<Patients>().ToTable("Patients");
 
             //Chaves primárias
             modelBuilder.Entity<Foods>().HasKey(f => f.Id);
+            modelBuilder.Entity<Patients>().HasKey(p => p.Id);
 
 
         }
