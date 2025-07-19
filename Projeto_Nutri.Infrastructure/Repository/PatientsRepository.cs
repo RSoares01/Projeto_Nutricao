@@ -44,12 +44,13 @@ namespace Projeto_Nutri.Infrastructure.Repository
 
         public void Delete(int id)
         {
-            var food = Context.Patients.FirstOrDefault(p => p.Id == id);
-            if (food != null)
+            var patient = Context.Patients.FirstOrDefault(p => p.Id == id);
+            if (patient != null)
             {
-                Context.Patients.Remove(food);
+                patient.IsDeleted = true;
                 Context.SaveChanges();
             }
         }
+
     }
 }

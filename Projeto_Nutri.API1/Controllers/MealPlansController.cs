@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Projeto_Nutri.Application.DTO;
 using Projeto_Nutri.Application.DTO.Projeto_Nutri.Application.DTO;
 using Projeto_Nutri.Application.Service;
 using Projeto_Nutri.Domain.Exceptions;
@@ -7,8 +8,8 @@ using Projeto_Nutri.Domain.Exceptions;
 namespace Projeto_Nutri.API.Controllers
 {
     [Route("mealplans")]
-    //[Authorize(Roles = "ADMIN,NUTRITIONIST")]
     [ApiController]
+    [Authorize(Roles = "ADMIN,NUTRITIONIST")]
     public class MealPlansController : ControllerBase
     {
         private readonly MealPlansService _service;
@@ -18,23 +19,46 @@ namespace Projeto_Nutri.API.Controllers
             _service = service;
         }
 
-        // GET /mealplans
         [HttpGet]
-        public IActionResult GetAll()
+        public IActionResult GetAll([FromQuery] int page = 1, [FromQuery] int pageSize = 10, [FromQuery] string? search = null)
         {
             try
             {
-                var plans = _service.GetAll();
-                if (plans == null || !plans.Any())
-                    return NotFound(new { message = "Nenhum plano alimentar encontrado." });
+                if (page < 1) page = 1;
+                if (pageSize < 1) pageSize = 10;
 
-                return Ok(plans);
+                List<MealPlansDTO> allPlans = _service.GetAll().ToList();
+
+                if (!string.IsNullOrWhiteSpace(search))
+                    allPlans = allPlans
+                        .Where(p => p.Nome.ToLower().Contains(search.ToLower()))
+                        .ToList();
+
+                var totalItems = allPlans.Count;
+                var pagedPlans = allPlans
+                    .OrderBy(p => p.Nome)
+                    .Skip((page - 1) * pageSize)
+                    .Take(pageSize)
+                    .ToList();
+
+                var response = new
+                {
+                    currentPage = page,
+                    pageSize = pageSize,
+                    totalItems,
+                    totalPages = (int)Math.Ceiling(totalItems / (double)pageSize),
+                    items = pagedPlans
+                };
+
+                return Ok(response);
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { error = "Erro interno ao buscar planos alimentares.", details = ex.Message });
+                return StatusCode(500, new { error = "Erro ao buscar planos alimentares.", details = ex.Message });
             }
         }
+
+
 
         // GET /mealplans/{id}
         [HttpGet("{id}")]
@@ -54,8 +78,9 @@ namespace Projeto_Nutri.API.Controllers
             }
         }
 
-        // POST /mealplans
+        // POST /mealplans (somente ADMIN)
         [HttpPost]
+        [Authorize(Roles = "ADMIN")]
         public IActionResult Create([FromBody] MealPlanCreateDTO dto)
         {
             if (dto == null)
@@ -64,7 +89,7 @@ namespace Projeto_Nutri.API.Controllers
             try
             {
                 var created = _service.Create(dto);
-                var createdDto = _service.GetById(created.Id); // usa DTO para evitar o ciclo
+                var createdDto = _service.GetById(created.Id); // evita retorno incompleto
 
                 return CreatedAtAction(nameof(GetById), new { id = created.Id }, createdDto);
             }
@@ -78,9 +103,9 @@ namespace Projeto_Nutri.API.Controllers
             }
         }
 
-
-        // DELETE /mealplans/{id}
+        // DELETE /mealplans/{id} (somente ADMIN)
         [HttpDelete("{id}")]
+        [Authorize(Roles = "ADMIN")]
         public IActionResult Delete(int id)
         {
             try
@@ -98,8 +123,8 @@ namespace Projeto_Nutri.API.Controllers
             }
         }
 
-
-        [HttpGet("/patients/{Idpatient}/mealplans/today")]
+        // GET /patients/{Idpatient}/mealplans/today
+        [HttpGet("/patients/{id}/mealplans/today")]
         public IActionResult GetTodayByPatientId(int id)
         {
             try
@@ -116,7 +141,5 @@ namespace Projeto_Nutri.API.Controllers
                 return StatusCode(500, new { error = "Erro ao buscar os planos de hoje.", details = ex.Message });
             }
         }
-
-
     }
 }

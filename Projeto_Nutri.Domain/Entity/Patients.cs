@@ -10,6 +10,8 @@ namespace Projeto_Nutri.Domain.Entity
         public int Idade { get; set; }
         public string Genero { get; set; } = string.Empty;
         public DateTime DataCriacao { get; set; }
+        public bool IsDeleted { get; set; } = false;
+
 
         // Relacionamento com MealPlans
         public ICollection<MealPlans> MealPlans { get; set; } = new List<MealPlans>();

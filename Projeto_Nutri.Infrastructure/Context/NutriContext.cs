@@ -26,6 +26,10 @@ namespace Projeto_Nutri.Infrastructure.Context
             modelBuilder.Entity<MealPlans>().HasKey(m => m.Id);
             modelBuilder.Entity<MealPlanFoods>().HasKey(mf => mf.Id);
 
+            // Filtro global para ignorar pacientes marcados como deletados
+            modelBuilder.Entity<Patients>().HasQueryFilter(p => !p.IsDeleted);
+
+
             modelBuilder.Entity<MealPlans>()
                 .HasOne(m => m.Patient)
                 .WithMany(p => p.MealPlans)

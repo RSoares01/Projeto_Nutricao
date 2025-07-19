@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Projeto_Nutri.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ad268f4370adc79c3d965e02f77a016aac9e2140")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a2e3c02bc706fa4f16718d508459e2e644863b61")]
 [assembly: System.Reflection.AssemblyProductAttribute("Projeto_Nutri.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Projeto_Nutri.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

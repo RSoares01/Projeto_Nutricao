@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "Projeto_Nutri.API.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "Projeto_Nutri.Application.DTO.LoginRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Projeto_Nutri.API.Controllers.FoodsController",
     "Method": "GetAll",
     "RelativePath": "foods",
@@ -218,7 +234,7 @@
   {
     "ContainingType": "Projeto_Nutri.API.Controllers.MealPlansController",
     "Method": "GetTodayByPatientId",
-    "RelativePath": "patients/{id}/mealplans/today",
+    "RelativePath": "patients/{Idpatient}/mealplans/today",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -226,6 +242,11 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Idpatient",
+        "Type": "",
         "IsRequired": true
       }
     ],

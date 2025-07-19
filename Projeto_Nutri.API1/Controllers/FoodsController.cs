@@ -8,8 +8,8 @@ using Projeto_Nutri.Domain.Exceptions;
 namespace Projeto_Nutri.API.Controllers
 {
     [Route("foods")]
-    //[Authorize(Roles = "ADMIN,NUTRITIONIST")]
     [ApiController]
+    [Authorize(Roles = "ADMIN,NUTRITIONIST")]
     public class FoodsController : ControllerBase
     {
         private readonly FoodsService _service;
@@ -19,23 +19,46 @@ namespace Projeto_Nutri.API.Controllers
             _service = service;
         }
 
-        // GET /foods
+        // GET /foods?page=1&pageSize=10&search=banana
         [HttpGet]
-        public IActionResult GetAll()
+        public IActionResult GetAll([FromQuery] int page = 1, [FromQuery] int pageSize = 10, [FromQuery] string? search = null)
         {
             try
             {
-                var foods = _service.GetAllFoods();
-                if (foods == null || !foods.Any())
-                    return NotFound(new { message = "Nenhum alimento encontrado." });
+                if (page < 1) page = 1;
+                if (pageSize < 1) pageSize = 10;
 
-                return Ok(foods);
+                List<FoodsDTO> allFoods = _service.GetAllFoods().ToList();
+
+                if (!string.IsNullOrWhiteSpace(search))
+                    allFoods = allFoods
+                        .Where(f => f.Nome.ToLower().Contains(search.ToLower()))
+                        .ToList();
+
+                var totalItems = allFoods.Count;
+                var pagedFoods = allFoods
+                    .OrderBy(f => f.Nome)
+                    .Skip((page - 1) * pageSize)
+                    .Take(pageSize)
+                    .ToList();
+
+                var response = new
+                {
+                    currentPage = page,
+                    pageSize = pageSize,
+                    totalItems,
+                    totalPages = (int)Math.Ceiling(totalItems / (double)pageSize),
+                    items = pagedFoods
+                };
+
+                return Ok(response);
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { error = "Ocorreu um erro interno. Tente novamente mais tarde.", details = ex.Message });
+                return StatusCode(500, new { error = "Erro ao buscar alimentos.", details = ex.Message });
             }
         }
+
 
         // GET /foods/{id}
         [HttpGet("{id}")]
@@ -57,6 +80,7 @@ namespace Projeto_Nutri.API.Controllers
 
         // POST /foods
         [HttpPost]
+        [Authorize(Roles = "ADMIN")]
         public IActionResult Create([FromBody] FoodsDTO foods)
         {
             if (foods == null)
@@ -77,8 +101,9 @@ namespace Projeto_Nutri.API.Controllers
             }
         }
 
-        // PUT /foods/{id}
+        // PUT /foods
         [HttpPut]
+        [Authorize(Roles = "ADMIN")]
         public IActionResult Update(int id, [FromBody] FoodsDTO updatedFood)
         {
             if (updatedFood == null)
@@ -104,6 +129,7 @@ namespace Projeto_Nutri.API.Controllers
 
         // DELETE /foods/{id}
         [HttpDelete("{id}")]
+        [Authorize(Roles = "ADMIN")]
         public IActionResult Delete(int id)
         {
             try

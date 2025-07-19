@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "D772OdvaFdg=",
+  "dgSpecHash": "Xxb+p32PSX8=",
   "success": true,
   "projectFilePath": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.API1\\Projeto_Nutri.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rafael\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Rafael\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
     "C:\\Users\\Rafael\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.0\\microsoft.aspnetcore.authentication.jwtbearer.8.0.0.nupkg.sha512",
+    "C:\\Users\\Rafael\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.0\\microsoft.aspnetcore.authorization.8.0.0.nupkg.sha512",
+    "C:\\Users\\Rafael\\.nuget\\packages\\microsoft.aspnetcore.metadata\\8.0.0\\microsoft.aspnetcore.metadata.8.0.0.nupkg.sha512",
     "C:\\Users\\Rafael\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Rafael\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.6\\microsoft.data.sqlclient.5.1.6.nupkg.sha512",
     "C:\\Users\\Rafael\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.1.1\\microsoft.data.sqlclient.sni.runtime.5.1.1.nupkg.sha512",

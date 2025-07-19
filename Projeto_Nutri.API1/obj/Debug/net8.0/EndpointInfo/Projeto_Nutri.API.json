@@ -5,6 +5,37 @@
     "version": "1.0"
   },
   "paths": {
+    "/auth/login": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequestDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequestDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequestDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/foods": {
       "get": {
         "tags": [
@@ -214,7 +245,7 @@
         }
       }
     },
-    "/patients/{id}/mealplans/today": {
+    "/patients/{Idpatient}/mealplans/today": {
       "get": {
         "tags": [
           "MealPlans"
@@ -222,11 +253,18 @@
         "parameters": [
           {
             "name": "id",
-            "in": "path",
-            "required": true,
+            "in": "query",
             "schema": {
               "type": "integer",
               "format": "int32"
+            }
+          },
+          {
+            "name": "Idpatient",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
             }
           }
         ],
@@ -382,6 +420,20 @@
           "dataCriacao": {
             "type": "string",
             "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoginRequestDTO": {
+        "type": "object",
+        "properties": {
+          "username": {
+            "type": "string",
+            "nullable": true
+          },
+          "role": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
