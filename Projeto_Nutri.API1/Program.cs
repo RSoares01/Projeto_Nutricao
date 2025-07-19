@@ -23,10 +23,13 @@ builder.Services.AddAuthorization();
 // Repos + Services
 builder.Services.AddScoped<IFoodsRepository, FoodsRepository>();
 builder.Services.AddScoped<IPatientsRepository, PatientsRepository>();
+builder.Services.AddScoped<IMealPlansRepository, MealPlansRepository>();
+
 
 
 builder.Services.AddScoped<FoodsService>();
 builder.Services.AddScoped<PatientsService>();
+builder.Services.AddScoped<MealPlansService>();
 
 
 

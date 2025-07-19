@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OEW7xg7kU50=",
+  "dgSpecHash": "LVWvCieVNE8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\Projeto_Nutricao\\ClassLibrary1\\Projeto_Nutri.Application.csproj",
+  "projectFilePath": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\ClassLibrary1\\Projeto_Nutri.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rafael\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Rafael\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

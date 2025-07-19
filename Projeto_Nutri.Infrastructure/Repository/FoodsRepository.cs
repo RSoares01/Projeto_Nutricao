@@ -1,4 +1,5 @@
-﻿using Projeto_Nutri.Domain.Entity;
+﻿using Microsoft.EntityFrameworkCore;
+using Projeto_Nutri.Domain.Entity;
 using Projeto_Nutri.Infrastructure.Context;
 using Projeto_Nutri.Infrastructure.IRepository;
 using System.Collections.Generic;
@@ -41,12 +42,19 @@ namespace Projeto_Nutri.Infrastructure.Repository
 
         public void Delete(int id)
         {
-            var food = Context.Foods.FirstOrDefault(f => f.Id == id);
+            var food = Context.Foods
+                .Include(f => f.UsosEmPlanos)
+                .FirstOrDefault(f => f.Id == id);
+
             if (food != null)
             {
+                if (food.UsosEmPlanos.Any())
+                    Context.MealPlanFoods.RemoveRange(food.UsosEmPlanos);
+
                 Context.Foods.Remove(food);
                 Context.SaveChanges();
             }
         }
+
     }
 }

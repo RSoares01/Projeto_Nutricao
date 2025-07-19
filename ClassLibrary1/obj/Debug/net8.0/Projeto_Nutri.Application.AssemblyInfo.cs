@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Projeto_Nutri.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+554767df4d9ed3a97dd5b132769af1a1e701548d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ad268f4370adc79c3d965e02f77a016aac9e2140")]
 [assembly: System.Reflection.AssemblyProductAttribute("Projeto_Nutri.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Projeto_Nutri.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

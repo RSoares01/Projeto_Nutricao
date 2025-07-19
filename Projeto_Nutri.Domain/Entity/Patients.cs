@@ -1,18 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Projeto_Nutri.Domain.Entity
 {
     public class Patients
     {
         public int Id { get; set; }
-        public string Nome { get; set; }
+        public string Nome { get; set; } = string.Empty;
         public int Idade { get; set; }
-        public string Genero { get; set; }
+        public string Genero { get; set; } = string.Empty;
         public DateTime DataCriacao { get; set; }
+
+        // Relacionamento com MealPlans
+        public ICollection<MealPlans> MealPlans { get; set; } = new List<MealPlans>();
 
         public Patients(string nome, int idade, string genero, DateTime dataCriacao)
         {
@@ -21,8 +21,6 @@ namespace Projeto_Nutri.Domain.Entity
             Genero = genero;
             DataCriacao = dataCriacao;
         }
-
-        // Construtor vazio (caso o Entity Framework precise)
 
         public Patients() { }
     }

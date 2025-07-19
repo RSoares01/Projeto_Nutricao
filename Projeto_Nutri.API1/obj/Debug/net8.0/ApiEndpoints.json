@@ -79,6 +79,64 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Projeto_Nutri.API.Controllers.MealPlansController",
+    "Method": "GetAll",
+    "RelativePath": "mealplans",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Projeto_Nutri.API.Controllers.MealPlansController",
+    "Method": "Create",
+    "RelativePath": "mealplans",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Projeto_Nutri.Application.DTO.Projeto_Nutri.Application.DTO.MealPlanCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Projeto_Nutri.API.Controllers.MealPlansController",
+    "Method": "GetById",
+    "RelativePath": "mealplans/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Projeto_Nutri.API.Controllers.MealPlansController",
+    "Method": "Delete",
+    "RelativePath": "mealplans/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Projeto_Nutri.API.Controllers.PatientsController",
     "Method": "GetAll",
     "RelativePath": "patients",
@@ -146,6 +204,22 @@
     "Method": "Delete",
     "RelativePath": "patients/{id}",
     "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Projeto_Nutri.API.Controllers.MealPlansController",
+    "Method": "GetTodayByPatientId",
+    "RelativePath": "patients/{id}/mealplans/today",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [

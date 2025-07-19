@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\Projeto_Nutricao\\Projeto_Nutri.Domain\\Projeto_Nutri.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.Domain\\Projeto_Nutri.Domain.csproj",
       "projectName": "Projeto_Nutri.Domain",
-      "projectPath": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\Projeto_Nutricao\\Projeto_Nutri.Domain\\Projeto_Nutri.Domain.csproj",
+      "projectPath": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.Domain\\Projeto_Nutri.Domain.csproj",
       "packagesPath": "C:\\Users\\Rafael\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\Projeto_Nutricao\\Projeto_Nutri.Domain\\obj\\",
+      "outputPath": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
