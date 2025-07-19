@@ -55,8 +55,7 @@
               "ViewState": "AgIAAGkAAAAAAAAAAAAQwF4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-18T22:58:27.491Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -72,8 +71,7 @@
               "RelativeToolTip": "Projeto_Nutri.Infrastructure\\Repository\\FoodsRepository.cs",
               "ViewState": "AgIAACYAAAAAAAAAAAAAADEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T23:46:11.651Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-18T23:46:11.651Z"
             },
             {
               "$type": "Document",
@@ -85,8 +83,7 @@
               "RelativeToolTip": "Projeto_Nutri.Infrastructure\\Repository\\MealPlansRepository.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAUwCIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T23:28:15.681Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-18T23:28:15.681Z"
             },
             {
               "$type": "Document",
@@ -96,7 +93,7 @@
               "RelativeDocumentMoniker": "Projeto_Nutri.API1\\Controllers\\MealPlansController.cs",
               "ToolTip": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.API1\\Controllers\\MealPlansController.cs",
               "RelativeToolTip": "Projeto_Nutri.API1\\Controllers\\MealPlansController.cs",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAiwGsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAiwGsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-18T23:13:13.761Z",
               "EditorCaption": ""
@@ -111,8 +108,7 @@
               "RelativeToolTip": "Projeto_Nutri.API1\\Controllers\\FoodsController.cs",
               "ViewState": "AgIAADcAAAAAAAAAAAAUwDwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T23:12:23.056Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-18T23:12:23.056Z"
             },
             {
               "$type": "Document",
@@ -124,8 +120,7 @@
               "RelativeToolTip": "Projeto_Nutri.Infrastructure\\Context\\NutriContext.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAA8wBYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T23:12:16.69Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-18T23:12:16.69Z"
             },
             {
               "$type": "Document",
@@ -137,8 +132,7 @@
               "RelativeToolTip": "Projeto_Nutri.API1\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAwAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T23:13:37.212Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-18T23:13:37.212Z"
             },
             {
               "$type": "Document",
@@ -150,8 +144,7 @@
               "RelativeToolTip": "ClassLibrary1\\DTO\\MealPlansDTO.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAuwBgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T23:03:53.673Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-18T23:03:53.673Z"
             }
           ]
         }
