@@ -1,13 +1,10 @@
 ﻿using Projeto_Nutri.Domain.Entity;
 
-namespace Projeto_Nutri.Infrastructure.IRepository
+public interface IFoodsRepository
 {
-    public interface IFoodsRepository
-    {
-        Foods GetById(int id);
-        IEnumerable<Foods> GetAll();
-        void Create(Foods food);
-        void Update(Foods food);
-        void Delete(int id);
-    }
+    Task<Foods?> GetByIdAsync(int id);
+    Task<IEnumerable<Foods>> GetAllAsync();
+    Task CreateAsync(Foods food);
+    Task UpdateAsync(Foods food);
+    Task DeleteAsync(int id);
 }

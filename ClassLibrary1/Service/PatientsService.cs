@@ -1,6 +1,10 @@
 ﻿using Projeto_Nutri.Application.DTO;
 using Projeto_Nutri.Domain.Entity;
 using Projeto_Nutri.Infrastructure.IRepository;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Projeto_Nutri.Application.Service
 {
@@ -8,31 +12,31 @@ namespace Projeto_Nutri.Application.Service
     {
         private readonly IPatientsRepository _patientsRepository;
 
-        public PatientsService(IPatientsRepository foodsRepository)
+        public PatientsService(IPatientsRepository patientsRepository)
         {
-            _patientsRepository = foodsRepository;
+            _patientsRepository = patientsRepository;
         }
 
-        public PatientsDTO GetPatientById(int id)
+        public async Task<PatientsDTO?> GetPatientByIdAsync(int id)
         {
-            var patients = _patientsRepository.GetById(id);
-            if (patients == null)
+            var patient = await _patientsRepository.GetByIdAsync(id);
+            if (patient == null)
             {
                 return null;
             }
 
             return new PatientsDTO
             {
-                Id = patients.Id,
-                Nome = patients.Nome,
-                Idade = patients.Idade,
-                Genero = patients.Genero,
+                Id = patient.Id,
+                Nome = patient.Nome,
+                Idade = patient.Idade,
+                Genero = patient.Genero,
             };
         }
 
-        public IEnumerable<PatientsDTO> GetAllPatients()
+        public async Task<IEnumerable<PatientsDTO>> GetAllPatientsAsync()
         {
-            var patients = _patientsRepository.GetAll();
+            var patients = await _patientsRepository.GetAllAsync();
 
             return patients.Select(p => new PatientsDTO
             {
@@ -43,34 +47,32 @@ namespace Projeto_Nutri.Application.Service
             });
         }
 
-        public Patients CreatePatient(PatientsDTO patientsDTO)
+        public async Task<Patients> CreatePatientAsync(PatientsDTO patientsDTO)
         {
-            var patients = new Patients(patientsDTO.Nome, patientsDTO.Idade, patientsDTO.Genero, patientsDTO.DataCriacao);
-            _patientsRepository.Create(patients);
-            return patients;
+            var patient = new Patients(patientsDTO.Nome, patientsDTO.Idade, patientsDTO.Genero, patientsDTO.DataCriacao);
+            await _patientsRepository.CreateAsync(patient);
+            return patient;
         }
 
-
-
-        public Patients UpdatePatient(PatientsDTO patientsDTO)
+        public async Task<Patients> UpdatePatientAsync(PatientsDTO patientsDTO)
         {
-            var patients = _patientsRepository.GetById(patientsDTO.Id);
+            var patient = await _patientsRepository.GetByIdAsync(patientsDTO.Id);
 
-            if (patients == null)
+            if (patient == null)
                 throw new Exception("Paciente não encontrado.");
 
-            patients.Nome = patientsDTO.Nome;
-            patients.Genero = patientsDTO.Genero;
-            patients.Idade = patientsDTO.Idade;
+            patient.Nome = patientsDTO.Nome;
+            patient.Genero = patientsDTO.Genero;
+            patient.Idade = patientsDTO.Idade;
 
-            _patientsRepository.Update(patients);
+            await _patientsRepository.UpdateAsync(patient);
 
-            return patients;
+            return patient;
         }
 
-        public void RemovePatient(int id)
+        public async Task RemovePatientAsync(int id)
         {
-            _patientsRepository.Delete(id);
+            await _patientsRepository.DeleteAsync(id);
         }
     }
 }

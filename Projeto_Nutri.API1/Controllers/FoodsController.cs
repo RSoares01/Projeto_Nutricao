@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Projeto_Nutri.Application.DTO;
 using Projeto_Nutri.Application.Service;
-using Projeto_Nutri.Domain.Entity;
 using Projeto_Nutri.Domain.Exceptions;
 
 namespace Projeto_Nutri.API.Controllers
@@ -21,14 +20,14 @@ namespace Projeto_Nutri.API.Controllers
 
         // GET /foods?page=1&pageSize=10&search=banana
         [HttpGet]
-        public IActionResult GetAll([FromQuery] int page = 1, [FromQuery] int pageSize = 10, [FromQuery] string? search = null)
+        public async Task<IActionResult> GetAll([FromQuery] int page = 1, [FromQuery] int pageSize = 10, [FromQuery] string? search = null)
         {
             try
             {
                 if (page < 1) page = 1;
                 if (pageSize < 1) pageSize = 10;
 
-                List<FoodsDTO> allFoods = _service.GetAllFoods().ToList();
+                var allFoods = (await _service.GetAllFoodsAsync()).ToList();
 
                 if (!string.IsNullOrWhiteSpace(search))
                     allFoods = allFoods
@@ -45,7 +44,7 @@ namespace Projeto_Nutri.API.Controllers
                 var response = new
                 {
                     currentPage = page,
-                    pageSize = pageSize,
+                    pageSize,
                     totalItems,
                     totalPages = (int)Math.Ceiling(totalItems / (double)pageSize),
                     items = pagedFoods
@@ -59,14 +58,13 @@ namespace Projeto_Nutri.API.Controllers
             }
         }
 
-
         // GET /foods/{id}
         [HttpGet("{id}")]
-        public IActionResult GetById(int id)
+        public async Task<IActionResult> GetById(int id)
         {
             try
             {
-                var food = _service.GetFoodById(id);
+                var food = await _service.GetFoodByIdAsync(id);
                 if (food == null)
                     return NotFound(new { message = $"Alimento com ID {id} não encontrado." });
 
@@ -74,21 +72,21 @@ namespace Projeto_Nutri.API.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { error = "Ocorreu um erro interno. Tente novamente mais tarde.", details = ex.Message });
+                return StatusCode(500, new { error = "Erro interno.", details = ex.Message });
             }
         }
 
         // POST /foods
         [HttpPost]
         [Authorize(Roles = "ADMIN")]
-        public IActionResult Create([FromBody] FoodsDTO foods)
+        public async Task<IActionResult> Create([FromBody] FoodsDTO foods)
         {
             if (foods == null)
                 return BadRequest(new { error = "Dados do alimento não podem ser nulos." });
 
             try
             {
-                var createdFood = _service.CreateFood(foods);
+                var createdFood = await _service.CreateFoodAsync(foods);
                 return CreatedAtAction(nameof(GetById), new { id = createdFood.Id }, createdFood);
             }
             catch (DomainException ex)
@@ -97,21 +95,21 @@ namespace Projeto_Nutri.API.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { error = "Ocorreu um erro ao criar o alimento.", details = ex.Message });
+                return StatusCode(500, new { error = "Erro ao criar o alimento.", details = ex.Message });
             }
         }
 
         // PUT /foods
         [HttpPut]
         [Authorize(Roles = "ADMIN")]
-        public IActionResult Update(int id, [FromBody] FoodsDTO updatedFood)
+        public async Task<IActionResult> Update(int id, [FromBody] FoodsDTO updatedFood)
         {
             if (updatedFood == null)
                 return BadRequest(new { error = "Dados do alimento não podem ser nulos." });
 
             try
             {
-                var result = _service.UpdateFood(updatedFood);
+                var result = await _service.UpdateFoodAsync(updatedFood);
                 if (result == null)
                     return NotFound(new { message = $"Alimento com ID {id} não encontrado." });
 
@@ -123,27 +121,27 @@ namespace Projeto_Nutri.API.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { error = "Ocorreu um erro ao atualizar o alimento.", details = ex.Message });
+                return StatusCode(500, new { error = "Erro ao atualizar o alimento.", details = ex.Message });
             }
         }
 
         // DELETE /foods/{id}
         [HttpDelete("{id}")]
         [Authorize(Roles = "ADMIN")]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
             try
             {
-                var existingFood = _service.GetFoodById(id);
+                var existingFood = await _service.GetFoodByIdAsync(id);
                 if (existingFood == null)
                     return NotFound(new { message = $"Alimento com ID {id} não encontrado." });
 
-                _service.RemoveFood(id);
+                await _service.RemoveFoodAsync(id);
                 return NoContent();
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { error = "Ocorreu um erro ao deletar o alimento.", details = ex.Message });
+                return StatusCode(500, new { error = "Erro ao deletar o alimento.", details = ex.Message });
             }
         }
     }

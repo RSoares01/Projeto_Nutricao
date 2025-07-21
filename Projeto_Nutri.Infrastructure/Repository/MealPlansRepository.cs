@@ -2,6 +2,9 @@
 using Projeto_Nutri.Domain.Entity;
 using Projeto_Nutri.Infrastructure.Context;
 using Projeto_Nutri.Infrastructure.IRepository;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Projeto_Nutri.Infrastructure.Repository
 {
@@ -16,53 +19,58 @@ namespace Projeto_Nutri.Infrastructure.Repository
             _context = context;
         }
 
-        public MealPlans? GetById(int id)
+        public async Task<MealPlans?> GetByIdAsync(int id)
         {
-            return Context.MealPlans
+            return await Context.MealPlans
                 .Include(m => m.Patient)
                 .Include(m => m.Alimentos)
                     .ThenInclude(a => a.Food)
-                .FirstOrDefault(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.Id == id);
         }
 
-        public IEnumerable<MealPlans> GetAll()
+        public async Task<IEnumerable<MealPlans>> GetAllAsync()
         {
-            return Context.MealPlans
+            return await Context.MealPlans
                 .Include(m => m.Patient)
                 .Include(m => m.Alimentos)
                     .ThenInclude(a => a.Food)
-                .ToList();
+                .ToListAsync();
         }
 
-        public void Create(MealPlans mealPlans)
+        public async Task CreateAsync(MealPlans mealPlans)
         {
-            Context.MealPlans.Add(mealPlans);
-            Context.SaveChanges();
+            await Context.MealPlans.AddAsync(mealPlans);
+            await Context.SaveChangesAsync();
         }
 
-        public void Update(MealPlans mealPlans)
+        public async Task DeleteAsync(int id)
         {
-            Context.MealPlans.Update(mealPlans);
-            Context.SaveChanges();
-        }
-
-        public void Delete(int id)
-        {
-            var mealPlan = Context.MealPlans
+            var mealPlan = await Context.MealPlans
                 .Include(m => m.Alimentos)
-                .FirstOrDefault(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.Id == id);
 
             if (mealPlan != null)
             {
-                // Remove os alimentos filhos antes, se necessário
                 if (mealPlan.Alimentos != null && mealPlan.Alimentos.Any())
                 {
                     Context.MealPlanFoods.RemoveRange(mealPlan.Alimentos);
                 }
 
                 Context.MealPlans.Remove(mealPlan);
-                Context.SaveChanges();
+                await Context.SaveChangesAsync();
             }
+        }
+
+        public async Task<IEnumerable<MealPlans>> GetTodayByPatientIdAsync(int patientId)
+        {
+            var today = DateTime.Today;
+
+            return await _context.MealPlans
+                .Where(mp => mp.PatientId == patientId && mp.DataCriacao.Date == today)
+                .Include(m => m.Patient)
+                .Include(m => m.Alimentos)
+                    .ThenInclude(a => a.Food)
+                .ToListAsync();
         }
     }
 }

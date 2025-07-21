@@ -7,12 +7,80 @@
       "RelativeMoniker": "D:0:0:{9B4BF621-A332-423D-8D5A-8C770C6FB6AF}|Projeto_Nutri.API1\\Projeto_Nutri.API.csproj|solutionrelative:projeto_nutri.api1\\controllers\\patientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{277FC573-9B9E-4C45-BEB6-4434E9A433B3}|Projeto_Nutri.Domain\\Projeto_Nutri.Domain.csproj|c:\\users\\rafael\\documents\\projetosgit\\bkp\\projeto_nutricao\\projeto_nutri.domain\\exceptions\\domainexceptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{277FC573-9B9E-4C45-BEB6-4434E9A433B3}|Projeto_Nutri.Domain\\Projeto_Nutri.Domain.csproj|solutionrelative:projeto_nutri.domain\\exceptions\\domainexceptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BE8589C-B6B2-45B0-BACC-76419210A692}|Projeto_Nutri.Tests\\Projeto_Nutri.Tests.csproj|c:\\users\\rafael\\documents\\projetosgit\\bkp\\projeto_nutricao\\projeto_nutri.tests\\services\\patientsservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BE8589C-B6B2-45B0-BACC-76419210A692}|Projeto_Nutri.Tests\\Projeto_Nutri.Tests.csproj|solutionrelative:projeto_nutri.tests\\services\\patientsservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3A7F8BB-80A3-49E8-A7C3-35B05CFE6DAA}|Projeto_Nutri.Infrastructure\\Projeto_Nutri.Infrastructure.csproj|c:\\users\\rafael\\documents\\projetosgit\\bkp\\projeto_nutricao\\projeto_nutri.infrastructure\\repository\\patientsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3A7F8BB-80A3-49E8-A7C3-35B05CFE6DAA}|Projeto_Nutri.Infrastructure\\Projeto_Nutri.Infrastructure.csproj|solutionrelative:projeto_nutri.infrastructure\\repository\\patientsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3A7F8BB-80A3-49E8-A7C3-35B05CFE6DAA}|Projeto_Nutri.Infrastructure\\Projeto_Nutri.Infrastructure.csproj|c:\\users\\rafael\\documents\\projetosgit\\bkp\\projeto_nutricao\\projeto_nutri.infrastructure\\irepository\\ipatientsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3A7F8BB-80A3-49E8-A7C3-35B05CFE6DAA}|Projeto_Nutri.Infrastructure\\Projeto_Nutri.Infrastructure.csproj|solutionrelative:projeto_nutri.infrastructure\\irepository\\ipatientsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAC11CCD-563E-4FB2-AE38-3EA6ADAFD616}|ClassLibrary1\\Projeto_Nutri.Application.csproj|c:\\users\\rafael\\documents\\projetosgit\\bkp\\projeto_nutricao\\classlibrary1\\service\\patientsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAC11CCD-563E-4FB2-AE38-3EA6ADAFD616}|ClassLibrary1\\Projeto_Nutri.Application.csproj|solutionrelative:classlibrary1\\service\\patientsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BE8589C-B6B2-45B0-BACC-76419210A692}|Projeto_Nutri.Tests\\Projeto_Nutri.Tests.csproj|c:\\users\\rafael\\documents\\projetosgit\\bkp\\projeto_nutricao\\projeto_nutri.tests\\services\\mealplansservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BE8589C-B6B2-45B0-BACC-76419210A692}|Projeto_Nutri.Tests\\Projeto_Nutri.Tests.csproj|solutionrelative:projeto_nutri.tests\\services\\mealplansservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3A7F8BB-80A3-49E8-A7C3-35B05CFE6DAA}|Projeto_Nutri.Infrastructure\\Projeto_Nutri.Infrastructure.csproj|c:\\users\\rafael\\documents\\projetosgit\\bkp\\projeto_nutricao\\projeto_nutri.infrastructure\\repository\\mealplansrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3A7F8BB-80A3-49E8-A7C3-35B05CFE6DAA}|Projeto_Nutri.Infrastructure\\Projeto_Nutri.Infrastructure.csproj|solutionrelative:projeto_nutri.infrastructure\\repository\\mealplansrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3A7F8BB-80A3-49E8-A7C3-35B05CFE6DAA}|Projeto_Nutri.Infrastructure\\Projeto_Nutri.Infrastructure.csproj|c:\\users\\rafael\\documents\\projetosgit\\bkp\\projeto_nutricao\\projeto_nutri.infrastructure\\irepository\\imealplansrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3A7F8BB-80A3-49E8-A7C3-35B05CFE6DAA}|Projeto_Nutri.Infrastructure\\Projeto_Nutri.Infrastructure.csproj|solutionrelative:projeto_nutri.infrastructure\\irepository\\imealplansrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAC11CCD-563E-4FB2-AE38-3EA6ADAFD616}|ClassLibrary1\\Projeto_Nutri.Application.csproj|c:\\users\\rafael\\documents\\projetosgit\\bkp\\projeto_nutricao\\classlibrary1\\service\\mealplansservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAC11CCD-563E-4FB2-AE38-3EA6ADAFD616}|ClassLibrary1\\Projeto_Nutri.Application.csproj|solutionrelative:classlibrary1\\service\\mealplansservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9B4BF621-A332-423D-8D5A-8C770C6FB6AF}|Projeto_Nutri.API1\\Projeto_Nutri.API.csproj|c:\\users\\rafael\\documents\\projetosgit\\bkp\\projeto_nutricao\\projeto_nutri.api1\\controllers\\mealplanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9B4BF621-A332-423D-8D5A-8C770C6FB6AF}|Projeto_Nutri.API1\\Projeto_Nutri.API.csproj|solutionrelative:projeto_nutri.api1\\controllers\\mealplanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{2BE8589C-B6B2-45B0-BACC-76419210A692}|Projeto_Nutri.Tests\\Projeto_Nutri.Tests.csproj|c:\\users\\rafael\\documents\\projetosgit\\bkp\\projeto_nutricao\\projeto_nutri.tests\\services\\foodsservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BE8589C-B6B2-45B0-BACC-76419210A692}|Projeto_Nutri.Tests\\Projeto_Nutri.Tests.csproj|solutionrelative:projeto_nutri.tests\\services\\foodsservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3A7F8BB-80A3-49E8-A7C3-35B05CFE6DAA}|Projeto_Nutri.Infrastructure\\Projeto_Nutri.Infrastructure.csproj|c:\\users\\rafael\\documents\\projetosgit\\bkp\\projeto_nutricao\\projeto_nutri.infrastructure\\repository\\foodsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3A7F8BB-80A3-49E8-A7C3-35B05CFE6DAA}|Projeto_Nutri.Infrastructure\\Projeto_Nutri.Infrastructure.csproj|solutionrelative:projeto_nutri.infrastructure\\repository\\foodsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3A7F8BB-80A3-49E8-A7C3-35B05CFE6DAA}|Projeto_Nutri.Infrastructure\\Projeto_Nutri.Infrastructure.csproj|c:\\users\\rafael\\documents\\projetosgit\\bkp\\projeto_nutricao\\projeto_nutri.infrastructure\\irepository\\ifoodsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3A7F8BB-80A3-49E8-A7C3-35B05CFE6DAA}|Projeto_Nutri.Infrastructure\\Projeto_Nutri.Infrastructure.csproj|solutionrelative:projeto_nutri.infrastructure\\irepository\\ifoodsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAC11CCD-563E-4FB2-AE38-3EA6ADAFD616}|ClassLibrary1\\Projeto_Nutri.Application.csproj|c:\\users\\rafael\\documents\\projetosgit\\bkp\\projeto_nutricao\\classlibrary1\\service\\foodsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAC11CCD-563E-4FB2-AE38-3EA6ADAFD616}|ClassLibrary1\\Projeto_Nutri.Application.csproj|solutionrelative:classlibrary1\\service\\foodsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9B4BF621-A332-423D-8D5A-8C770C6FB6AF}|Projeto_Nutri.API1\\Projeto_Nutri.API.csproj|c:\\users\\rafael\\documents\\projetosgit\\bkp\\projeto_nutricao\\projeto_nutri.api1\\controllers\\foodscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9B4BF621-A332-423D-8D5A-8C770C6FB6AF}|Projeto_Nutri.API1\\Projeto_Nutri.API.csproj|solutionrelative:projeto_nutri.api1\\controllers\\foodscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{277FC573-9B9E-4C45-BEB6-4434E9A433B3}|Projeto_Nutri.Domain\\Projeto_Nutri.Domain.csproj|c:\\users\\rafael\\documents\\projetosgit\\bkp\\projeto_nutricao\\projeto_nutri.domain\\entity\\mealplans.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{277FC573-9B9E-4C45-BEB6-4434E9A433B3}|Projeto_Nutri.Domain\\Projeto_Nutri.Domain.csproj|solutionrelative:projeto_nutri.domain\\entity\\mealplans.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BE8589C-B6B2-45B0-BACC-76419210A692}|Projeto_Nutri.Tests\\Projeto_Nutri.Tests.csproj|c:\\users\\rafael\\documents\\projetosgit\\bkp\\projeto_nutricao\\projeto_nutri.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BE8589C-B6B2-45B0-BACC-76419210A692}|Projeto_Nutri.Tests\\Projeto_Nutri.Tests.csproj|solutionrelative:projeto_nutri.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3A7F8BB-80A3-49E8-A7C3-35B05CFE6DAA}|Projeto_Nutri.Infrastructure\\Projeto_Nutri.Infrastructure.csproj|c:\\users\\rafael\\documents\\projetosgit\\bkp\\projeto_nutricao\\projeto_nutri.infrastructure\\context\\nutricontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3A7F8BB-80A3-49E8-A7C3-35B05CFE6DAA}|Projeto_Nutri.Infrastructure\\Projeto_Nutri.Infrastructure.csproj|solutionrelative:projeto_nutri.infrastructure\\context\\nutricontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{277FC573-9B9E-4C45-BEB6-4434E9A433B3}|Projeto_Nutri.Domain\\Projeto_Nutri.Domain.csproj|c:\\users\\rafael\\documents\\projetosgit\\bkp\\projeto_nutricao\\projeto_nutri.domain\\entity\\patients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{277FC573-9B9E-4C45-BEB6-4434E9A433B3}|Projeto_Nutri.Domain\\Projeto_Nutri.Domain.csproj|solutionrelative:projeto_nutri.domain\\entity\\patients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9B4BF621-A332-423D-8D5A-8C770C6FB6AF}|Projeto_Nutri.API1\\Projeto_Nutri.API.csproj|c:\\users\\rafael\\documents\\projetosgit\\bkp\\projeto_nutricao\\projeto_nutri.api1\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,24 +99,8 @@
       "RelativeMoniker": "D:0:0:{9B4BF621-A332-423D-8D5A-8C770C6FB6AF}|Projeto_Nutri.API1\\Projeto_Nutri.API.csproj|solutionrelative:projeto_nutri.api1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A3A7F8BB-80A3-49E8-A7C3-35B05CFE6DAA}|Projeto_Nutri.Infrastructure\\Projeto_Nutri.Infrastructure.csproj|c:\\users\\rafael\\documents\\projetosgit\\bkp\\projeto_nutricao\\projeto_nutri.infrastructure\\repository\\mealplansrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3A7F8BB-80A3-49E8-A7C3-35B05CFE6DAA}|Projeto_Nutri.Infrastructure\\Projeto_Nutri.Infrastructure.csproj|solutionrelative:projeto_nutri.infrastructure\\repository\\mealplansrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAC11CCD-563E-4FB2-AE38-3EA6ADAFD616}|ClassLibrary1\\Projeto_Nutri.Application.csproj|c:\\users\\rafael\\documents\\projetosgit\\bkp\\projeto_nutricao\\classlibrary1\\service\\mealplansservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAC11CCD-563E-4FB2-AE38-3EA6ADAFD616}|ClassLibrary1\\Projeto_Nutri.Application.csproj|solutionrelative:classlibrary1\\service\\mealplansservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3A7F8BB-80A3-49E8-A7C3-35B05CFE6DAA}|Projeto_Nutri.Infrastructure\\Projeto_Nutri.Infrastructure.csproj|c:\\users\\rafael\\documents\\projetosgit\\bkp\\projeto_nutricao\\projeto_nutri.infrastructure\\context\\nutricontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3A7F8BB-80A3-49E8-A7C3-35B05CFE6DAA}|Projeto_Nutri.Infrastructure\\Projeto_Nutri.Infrastructure.csproj|solutionrelative:projeto_nutri.infrastructure\\context\\nutricontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DAC11CCD-563E-4FB2-AE38-3EA6ADAFD616}|ClassLibrary1\\Projeto_Nutri.Application.csproj|c:\\users\\rafael\\documents\\projetosgit\\bkp\\projeto_nutricao\\classlibrary1\\dto\\mealplansdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAC11CCD-563E-4FB2-AE38-3EA6ADAFD616}|ClassLibrary1\\Projeto_Nutri.Application.csproj|solutionrelative:classlibrary1\\dto\\mealplansdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3A7F8BB-80A3-49E8-A7C3-35B05CFE6DAA}|Projeto_Nutri.Infrastructure\\Projeto_Nutri.Infrastructure.csproj|c:\\users\\rafael\\documents\\projetosgit\\bkp\\projeto_nutricao\\projeto_nutri.infrastructure\\repository\\foodsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3A7F8BB-80A3-49E8-A7C3-35B05CFE6DAA}|Projeto_Nutri.Infrastructure\\Projeto_Nutri.Infrastructure.csproj|solutionrelative:projeto_nutri.infrastructure\\repository\\foodsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,25 +110,61 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "MealPlansService.cs",
               "DocumentMoniker": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\ClassLibrary1\\Service\\MealPlansService.cs",
               "RelativeDocumentMoniker": "ClassLibrary1\\Service\\MealPlansService.cs",
               "ToolTip": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\ClassLibrary1\\Service\\MealPlansService.cs",
               "RelativeToolTip": "ClassLibrary1\\Service\\MealPlansService.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAQwF4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAIwH0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-18T22:58:27.491Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DomainExceptions.cs",
+              "DocumentMoniker": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.Domain\\Exceptions\\DomainExceptions.cs",
+              "RelativeDocumentMoniker": "Projeto_Nutri.Domain\\Exceptions\\DomainExceptions.cs",
+              "ToolTip": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.Domain\\Exceptions\\DomainExceptions.cs",
+              "RelativeToolTip": "Projeto_Nutri.Domain\\Exceptions\\DomainExceptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T03:56:12.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IPatientsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.Infrastructure\\IRepository\\IPatientsRepository.cs",
+              "RelativeDocumentMoniker": "Projeto_Nutri.Infrastructure\\IRepository\\IPatientsRepository.cs",
+              "ToolTip": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.Infrastructure\\IRepository\\IPatientsRepository.cs",
+              "RelativeToolTip": "Projeto_Nutri.Infrastructure\\IRepository\\IPatientsRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T03:49:46.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PatientsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.Infrastructure\\Repository\\PatientsRepository.cs",
+              "RelativeDocumentMoniker": "Projeto_Nutri.Infrastructure\\Repository\\PatientsRepository.cs",
+              "ToolTip": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.Infrastructure\\Repository\\PatientsRepository.cs",
+              "RelativeToolTip": "Projeto_Nutri.Infrastructure\\Repository\\PatientsRepository.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAuwD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T22:03:21.141Z"
             },
             {
               "$type": "Document",
@@ -86,7 +174,7 @@
               "RelativeDocumentMoniker": "Projeto_Nutri.API1\\Controllers\\PatientsController.cs",
               "ToolTip": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.API1\\Controllers\\PatientsController.cs",
               "RelativeToolTip": "Projeto_Nutri.API1\\Controllers\\PatientsController.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAowHcAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAK8AAAAAAAAAAAAmwMYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-19T02:49:41.518Z",
               "EditorCaption": ""
@@ -94,54 +182,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.API1\\Program.cs",
-              "RelativeDocumentMoniker": "Projeto_Nutri.API1\\Program.cs",
-              "ToolTip": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.API1\\Program.cs",
-              "RelativeToolTip": "Projeto_Nutri.API1\\Program.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAADwv0kAAAAZAAAAAAAAAA==",
+              "Title": "PatientsService.cs",
+              "DocumentMoniker": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\ClassLibrary1\\Service\\PatientsService.cs",
+              "RelativeDocumentMoniker": "ClassLibrary1\\Service\\PatientsService.cs",
+              "ToolTip": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\ClassLibrary1\\Service\\PatientsService.cs",
+              "RelativeToolTip": "ClassLibrary1\\Service\\PatientsService.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAmwE4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T23:13:37.212Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "FoodsRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.Infrastructure\\Repository\\FoodsRepository.cs",
-              "RelativeDocumentMoniker": "Projeto_Nutri.Infrastructure\\Repository\\FoodsRepository.cs",
-              "ToolTip": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.Infrastructure\\Repository\\FoodsRepository.cs",
-              "RelativeToolTip": "Projeto_Nutri.Infrastructure\\Repository\\FoodsRepository.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAABQwDEAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T23:46:11.651Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T03:52:10.196Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "FoodsController.cs",
-              "DocumentMoniker": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.API1\\Controllers\\FoodsController.cs",
-              "RelativeDocumentMoniker": "Projeto_Nutri.API1\\Controllers\\FoodsController.cs",
-              "ToolTip": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.API1\\Controllers\\FoodsController.cs",
-              "RelativeToolTip": "Projeto_Nutri.API1\\Controllers\\FoodsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAtAAAAAAAAAA==",
+              "Title": "PatientsServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.Tests\\Services\\PatientsServiceTests.cs",
+              "RelativeDocumentMoniker": "Projeto_Nutri.Tests\\Services\\PatientsServiceTests.cs",
+              "ToolTip": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.Tests\\Services\\PatientsServiceTests.cs",
+              "RelativeToolTip": "Projeto_Nutri.Tests\\Services\\PatientsServiceTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T23:12:23.056Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T03:22:42.789Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MealPlansController.cs",
-              "DocumentMoniker": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.API1\\Controllers\\MealPlansController.cs",
-              "RelativeDocumentMoniker": "Projeto_Nutri.API1\\Controllers\\MealPlansController.cs",
-              "ToolTip": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.API1\\Controllers\\MealPlansController.cs",
-              "RelativeToolTip": "Projeto_Nutri.API1\\Controllers\\MealPlansController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "MealPlansServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.Tests\\Services\\MealPlansServiceTests.cs",
+              "RelativeDocumentMoniker": "Projeto_Nutri.Tests\\Services\\MealPlansServiceTests.cs",
+              "ToolTip": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.Tests\\Services\\MealPlansServiceTests.cs",
+              "RelativeToolTip": "Projeto_Nutri.Tests\\Services\\MealPlansServiceTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T23:13:13.761Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T03:33:29.707Z"
             },
             {
               "$type": "Document",
@@ -151,14 +223,157 @@
               "RelativeDocumentMoniker": "Projeto_Nutri.Infrastructure\\Repository\\MealPlansRepository.cs",
               "ToolTip": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.Infrastructure\\Repository\\MealPlansRepository.cs",
               "RelativeToolTip": "Projeto_Nutri.Infrastructure\\Repository\\MealPlansRepository.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAUwCIAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAADsAAAAAAAAAAAAmwEwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T23:28:15.681Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-18T23:28:15.681Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
+              "Title": "MealPlansController.cs",
+              "DocumentMoniker": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.API1\\Controllers\\MealPlansController.cs",
+              "RelativeDocumentMoniker": "Projeto_Nutri.API1\\Controllers\\MealPlansController.cs",
+              "ToolTip": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.API1\\Controllers\\MealPlansController.cs",
+              "RelativeToolTip": "Projeto_Nutri.API1\\Controllers\\MealPlansController.cs",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAmwIsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T23:13:13.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FoodsServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.Tests\\Services\\FoodsServiceTests.cs",
+              "RelativeDocumentMoniker": "Projeto_Nutri.Tests\\Services\\FoodsServiceTests.cs",
+              "ToolTip": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.Tests\\Services\\FoodsServiceTests.cs",
+              "RelativeToolTip": "Projeto_Nutri.Tests\\Services\\FoodsServiceTests.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAA0wB8AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T03:31:34.895Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FoodsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.Infrastructure\\Repository\\FoodsRepository.cs",
+              "RelativeDocumentMoniker": "Projeto_Nutri.Infrastructure\\Repository\\FoodsRepository.cs",
+              "ToolTip": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.Infrastructure\\Repository\\FoodsRepository.cs",
+              "RelativeToolTip": "Projeto_Nutri.Infrastructure\\Repository\\FoodsRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T23:46:11.651Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IMealPlansRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.Infrastructure\\IRepository\\IMealPlansRepository.cs",
+              "RelativeDocumentMoniker": "Projeto_Nutri.Infrastructure\\IRepository\\IMealPlansRepository.cs",
+              "ToolTip": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.Infrastructure\\IRepository\\IMealPlansRepository.cs",
+              "RelativeToolTip": "Projeto_Nutri.Infrastructure\\IRepository\\IMealPlansRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T03:36:42.512Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FoodsService.cs",
+              "DocumentMoniker": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\ClassLibrary1\\Service\\FoodsService.cs",
+              "RelativeDocumentMoniker": "ClassLibrary1\\Service\\FoodsService.cs",
+              "ToolTip": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\ClassLibrary1\\Service\\FoodsService.cs",
+              "RelativeToolTip": "ClassLibrary1\\Service\\FoodsService.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAmwEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T03:41:56.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IFoodsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.Infrastructure\\IRepository\\IFoodsRepository.cs",
+              "RelativeDocumentMoniker": "Projeto_Nutri.Infrastructure\\IRepository\\IFoodsRepository.cs",
+              "ToolTip": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.Infrastructure\\IRepository\\IFoodsRepository.cs",
+              "RelativeToolTip": "Projeto_Nutri.Infrastructure\\IRepository\\IFoodsRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T03:42:28.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FoodsController.cs",
+              "DocumentMoniker": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.API1\\Controllers\\FoodsController.cs",
+              "RelativeDocumentMoniker": "Projeto_Nutri.API1\\Controllers\\FoodsController.cs",
+              "ToolTip": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.API1\\Controllers\\FoodsController.cs",
+              "RelativeToolTip": "Projeto_Nutri.API1\\Controllers\\FoodsController.cs",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAmwJQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T23:12:23.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MealPlans.cs",
+              "DocumentMoniker": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.Domain\\Entity\\MealPlans.cs",
+              "RelativeDocumentMoniker": "Projeto_Nutri.Domain\\Entity\\MealPlans.cs",
+              "ToolTip": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.Domain\\Entity\\MealPlans.cs",
+              "RelativeToolTip": "Projeto_Nutri.Domain\\Entity\\MealPlans.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAuwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T03:33:52.585Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.Tests\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "Projeto_Nutri.Tests\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.Tests\\UnitTest1.cs",
+              "RelativeToolTip": "Projeto_Nutri.Tests\\UnitTest1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T03:20:38.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Patients.cs",
+              "DocumentMoniker": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.Domain\\Entity\\Patients.cs",
+              "RelativeDocumentMoniker": "Projeto_Nutri.Domain\\Entity\\Patients.cs",
+              "ToolTip": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.Domain\\Entity\\Patients.cs",
+              "RelativeToolTip": "Projeto_Nutri.Domain\\Entity\\Patients.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAwAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T21:57:42.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "NutriContext.cs",
+              "DocumentMoniker": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.Infrastructure\\Context\\NutriContext.cs",
+              "RelativeDocumentMoniker": "Projeto_Nutri.Infrastructure\\Context\\NutriContext.cs",
+              "ToolTip": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.Infrastructure\\Context\\NutriContext.cs",
+              "RelativeToolTip": "Projeto_Nutri.Infrastructure\\Context\\NutriContext.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAADwvyAAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T23:12:16.69Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.API1\\Program.cs",
+              "RelativeDocumentMoniker": "Projeto_Nutri.API1\\Program.cs",
+              "ToolTip": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.API1\\Program.cs",
+              "RelativeToolTip": "Projeto_Nutri.API1\\Program.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAADwv0kAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T23:13:37.212Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.API1\\appsettings.json",
               "RelativeDocumentMoniker": "Projeto_Nutri.API1\\appsettings.json",
@@ -166,12 +381,11 @@
               "RelativeToolTip": "Projeto_Nutri.API1\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-19T02:38:30.655Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-19T02:38:30.655Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 20,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.API1\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Projeto_Nutri.API1\\Controllers\\AuthController.cs",
@@ -179,12 +393,11 @@
               "RelativeToolTip": "Projeto_Nutri.API1\\Controllers\\AuthController.cs",
               "ViewState": "AgIAACoAAAAAAAAAAAAowDsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-19T02:44:07.779Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-19T02:44:07.779Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 21,
               "Title": "LoginRequestDTO.cs",
               "DocumentMoniker": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\ClassLibrary1\\DTO\\LoginRequestDTO.cs",
               "RelativeDocumentMoniker": "ClassLibrary1\\DTO\\LoginRequestDTO.cs",
@@ -192,25 +405,11 @@
               "RelativeToolTip": "ClassLibrary1\\DTO\\LoginRequestDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-19T02:43:16.881Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-19T02:43:16.881Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "NutriContext.cs",
-              "DocumentMoniker": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.Infrastructure\\Context\\NutriContext.cs",
-              "RelativeDocumentMoniker": "Projeto_Nutri.Infrastructure\\Context\\NutriContext.cs",
-              "ToolTip": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\Projeto_Nutri.Infrastructure\\Context\\NutriContext.cs",
-              "RelativeToolTip": "Projeto_Nutri.Infrastructure\\Context\\NutriContext.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAmwBYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T23:12:16.69Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 24,
               "Title": "MealPlansDTO.cs",
               "DocumentMoniker": "C:\\Users\\Rafael\\Documents\\ProjetosGIT\\BKP\\Projeto_Nutricao\\ClassLibrary1\\DTO\\MealPlansDTO.cs",
               "RelativeDocumentMoniker": "ClassLibrary1\\DTO\\MealPlansDTO.cs",
@@ -218,8 +417,7 @@
               "RelativeToolTip": "ClassLibrary1\\DTO\\MealPlansDTO.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAuwBgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T23:03:53.673Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-18T23:03:53.673Z"
             }
           ]
         }

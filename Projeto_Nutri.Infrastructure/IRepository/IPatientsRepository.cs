@@ -1,18 +1,15 @@
 ﻿using Projeto_Nutri.Domain.Entity;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Projeto_Nutri.Infrastructure.IRepository
 {
     public interface IPatientsRepository
     {
-        Patients GetById(int id);
-        IEnumerable<Patients> GetAll();
-        void Create(Patients patients);
-        void Update(Patients patients);
-        void Delete(int id);
+        Task<Patients?> GetByIdAsync(int id);
+        Task<IEnumerable<Patients>> GetAllAsync();
+        Task CreateAsync(Patients patient);
+        Task UpdateAsync(Patients patient);
+        Task DeleteAsync(int id);
     }
 }

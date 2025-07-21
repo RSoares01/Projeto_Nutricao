@@ -4,6 +4,7 @@ using Projeto_Nutri.Infrastructure.Context;
 using Projeto_Nutri.Infrastructure.IRepository;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace Projeto_Nutri.Infrastructure.Repository
 {
@@ -18,33 +19,35 @@ namespace Projeto_Nutri.Infrastructure.Repository
             _context = context;
         }
 
-        public Foods GetById(int id)
+        public async Task<Foods?> GetByIdAsync(int id)
         {
-            return Context.Foods.FirstOrDefault(f => f.Id == id);
+            return await Context.Foods
+                .Include(f => f.UsosEmPlanos)
+                .FirstOrDefaultAsync(f => f.Id == id);
         }
 
-        public IEnumerable<Foods> GetAll()
+        public async Task<IEnumerable<Foods>> GetAllAsync()
         {
-            return Context.Foods.ToList();
+            return await Context.Foods.ToListAsync();
         }
 
-        public void Create(Foods food)
+        public async Task CreateAsync(Foods food)
         {
-            Context.Foods.Add(food);
-            Context.SaveChanges();
+            await Context.Foods.AddAsync(food);
+            await Context.SaveChangesAsync();
         }
 
-        public void Update(Foods food)
+        public async Task UpdateAsync(Foods food)
         {
             Context.Foods.Update(food);
-            Context.SaveChanges();
+            await Context.SaveChangesAsync();
         }
 
-        public void Delete(int id)
+        public async Task DeleteAsync(int id)
         {
-            var food = Context.Foods
+            var food = await Context.Foods
                 .Include(f => f.UsosEmPlanos)
-                .FirstOrDefault(f => f.Id == id);
+                .FirstOrDefaultAsync(f => f.Id == id);
 
             if (food != null)
             {
@@ -52,9 +55,8 @@ namespace Projeto_Nutri.Infrastructure.Repository
                     Context.MealPlanFoods.RemoveRange(food.UsosEmPlanos);
 
                 Context.Foods.Remove(food);
-                Context.SaveChanges();
+                await Context.SaveChangesAsync();
             }
         }
-
     }
 }

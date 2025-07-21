@@ -1,6 +1,9 @@
 ﻿using Projeto_Nutri.Application.DTO;
 using Projeto_Nutri.Domain.Entity;
 using Projeto_Nutri.Infrastructure.IRepository;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Projeto_Nutri.Application.Service
 {
@@ -13,13 +16,11 @@ namespace Projeto_Nutri.Application.Service
             _foodsRepository = foodsRepository;
         }
 
-        public FoodsDTO GetFoodById(int id)
+        public async Task<FoodsDTO?> GetFoodByIdAsync(int id)
         {
-            var food = _foodsRepository.GetById(id);
+            var food = await _foodsRepository.GetByIdAsync(id);
             if (food == null)
-            {
                 return null;
-            }
 
             return new FoodsDTO
             {
@@ -28,9 +29,9 @@ namespace Projeto_Nutri.Application.Service
             };
         }
 
-        public IEnumerable<FoodsDTO> GetAllFoods()
+        public async Task<IEnumerable<FoodsDTO>> GetAllFoodsAsync()
         {
-            var foods = _foodsRepository.GetAll();
+            var foods = await _foodsRepository.GetAllAsync();
 
             return foods.Select(f => new FoodsDTO
             {
@@ -39,32 +40,27 @@ namespace Projeto_Nutri.Application.Service
             });
         }
 
-        public Foods CreateFood(FoodsDTO foodsDTO)
+        public async Task<Foods> CreateFoodAsync(FoodsDTO foodsDTO)
         {
             var food = new Foods(foodsDTO.Nome, foodsDTO.Caloriaspor100g, foodsDTO.DataCriacao);
-            _foodsRepository.Create(food);
+            await _foodsRepository.CreateAsync(food);
             return food;
         }
 
-
-
-        public Foods UpdateFood(FoodsDTO foodsDTO)
+        public async Task<Foods?> UpdateFoodAsync(FoodsDTO foodsDTO)
         {
-            var food = _foodsRepository.GetById(foodsDTO.Id);
-
+            var food = await _foodsRepository.GetByIdAsync(foodsDTO.Id);
             if (food == null)
-                throw new Exception("Alimento não encontrado.");
+                return null;
 
             food.Nome = foodsDTO.Nome;
-
-            _foodsRepository.Update(food);
-
+            await _foodsRepository.UpdateAsync(food);
             return food;
         }
 
-        public void RemoveFood(int id)
+        public async Task RemoveFoodAsync(int id)
         {
-            _foodsRepository.Delete(id);
+            await _foodsRepository.DeleteAsync(id);
         }
     }
 }

@@ -18,16 +18,15 @@ namespace Projeto_Nutri.API.Controllers
             _service = service;
         }
 
-        // GET /patients?page=1&pageSize=10&search=joao
         [HttpGet]
-        public IActionResult GetAll([FromQuery] int page = 1, [FromQuery] int pageSize = 10, [FromQuery] string? search = null)
+        public async Task<IActionResult> GetAll([FromQuery] int page = 1, [FromQuery] int pageSize = 10, [FromQuery] string? search = null)
         {
             try
             {
                 if (page < 1) page = 1;
                 if (pageSize < 1) pageSize = 10;
 
-                List<PatientsDTO> allPatients = _service.GetAllPatients().ToList();
+                var allPatients = (await _service.GetAllPatientsAsync()).ToList();
 
                 if (!string.IsNullOrWhiteSpace(search))
                     allPatients = allPatients
@@ -54,94 +53,145 @@ namespace Projeto_Nutri.API.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { error = "Erro ao buscar pacientes.", details = ex.Message });
+                return Problem(
+                    detail: ex.Message,
+                    statusCode: 500,
+                    title: "Erro ao buscar pacientes."
+                );
             }
         }
 
-        // GET /patients/{id}
         [HttpGet("{id}")]
-        public IActionResult GetById(int id)
+        public async Task<IActionResult> GetById(int id)
         {
             try
             {
-                var patient = _service.GetPatientById(id);
+                var patient = await _service.GetPatientByIdAsync(id);
                 if (patient == null)
-                    return NotFound(new { message = $"Paciente com ID {id} não encontrado." });
+                    return NotFound(new ProblemDetails
+                    {
+                        Title = "Paciente não encontrado.",
+                        Detail = $"Paciente com ID {id} não foi localizado.",
+                        Status = 404
+                    });
 
                 return Ok(patient);
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { error = "Ocorreu um erro interno. Tente novamente mais tarde.", details = ex.Message });
+                return Problem(
+                    detail: ex.Message,
+                    statusCode: 500,
+                    title: "Erro ao buscar paciente."
+                );
             }
         }
 
-        // POST /patients (somente ADMIN)
         [HttpPost]
         [Authorize(Roles = "ADMIN")]
-        public IActionResult Create([FromBody] PatientsDTO patients)
+        public async Task<IActionResult> Create([FromBody] PatientsDTO patients)
         {
             if (patients == null)
-                return BadRequest(new { error = "Dados do paciente não podem ser nulos." });
+                return BadRequest(new ProblemDetails
+                {
+                    Title = "Dados inválidos.",
+                    Detail = "Dados do paciente não podem ser nulos.",
+                    Status = 400
+                });
 
             try
             {
-                var createdPatient = _service.CreatePatient(patients);
+                var createdPatient = await _service.CreatePatientAsync(patients);
                 return CreatedAtAction(nameof(GetById), new { id = createdPatient.Id }, createdPatient);
             }
             catch (DomainException ex)
             {
-                return BadRequest(new { error = ex.Message });
+                return BadRequest(new ProblemDetails
+                {
+                    Title = "Erro de domínio.",
+                    Detail = ex.Message,
+                    Status = 400
+                });
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { error = "Ocorreu um erro ao criar o paciente.", details = ex.Message });
+                return Problem(
+                    detail: ex.Message,
+                    statusCode: 500,
+                    title: "Erro ao criar paciente."
+                );
             }
         }
 
-        // PUT /patients/{id} (somente ADMIN)
-        [HttpPut]
+        [HttpPut("{id}")]
         [Authorize(Roles = "ADMIN")]
-        public IActionResult Update(int id, [FromBody] PatientsDTO updatedPatient)
+        public async Task<IActionResult> Update(int id, [FromBody] PatientsDTO updatedPatient)
         {
             if (updatedPatient == null)
-                return BadRequest(new { error = "Dados do paciente não podem ser nulos." });
+                return BadRequest(new ProblemDetails
+                {
+                    Title = "Dados inválidos.",
+                    Detail = "Dados do paciente não podem ser nulos.",
+                    Status = 400
+                });
 
             try
             {
-                var result = _service.UpdatePatient(updatedPatient);
+                var result = await _service.UpdatePatientAsync(updatedPatient);
                 if (result == null)
-                    return NotFound(new { message = $"Paciente com ID {id} não encontrado." });
+                    return NotFound(new ProblemDetails
+                    {
+                        Title = "Paciente não encontrado.",
+                        Detail = $"Paciente com ID {id} não foi localizado.",
+                        Status = 404
+                    });
 
                 return Ok(result);
             }
             catch (DomainException ex)
             {
-                return BadRequest(new { error = ex.Message });
+                return BadRequest(new ProblemDetails
+                {
+                    Title = "Erro de domínio.",
+                    Detail = ex.Message,
+                    Status = 400
+                });
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { error = "Ocorreu um erro ao atualizar o paciente.", details = ex.Message });
+                return Problem(
+                    detail: ex.Message,
+                    statusCode: 500,
+                    title: "Erro ao atualizar paciente."
+                );
             }
         }
 
-        // DELETE /patients/{id} (somente ADMIN)
         [HttpDelete("{id}")]
         [Authorize(Roles = "ADMIN")]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
             try
             {
-                var existingPatient = _service.GetPatientById(id);
+                var existingPatient = await _service.GetPatientByIdAsync(id);
                 if (existingPatient == null)
-                    return NotFound(new { message = $"Paciente com ID {id} não encontrado." });
+                    return NotFound(new ProblemDetails
+                    {
+                        Title = "Paciente não encontrado.",
+                        Detail = $"Paciente com ID {id} não foi localizado.",
+                        Status = 404
+                    });
 
-                _service.RemovePatient(id);
+                await _service.RemovePatientAsync(id);
                 return NoContent();
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { error = "Ocorreu um erro ao deletar o paciente.", details = ex.Message });
+                return Problem(
+                    detail: ex.Message,
+                    statusCode: 500,
+                    title: "Erro ao deletar paciente."
+                );
             }
         }
     }

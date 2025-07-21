@@ -21,9 +21,9 @@ namespace Projeto_Nutri.Application.Service
             _foodsRepository = foodsRepository;
         }
 
-        public MealPlansDTO? GetById(int id)
+        public async Task<MealPlansDTO?> GetByIdAsync(int id)
         {
-            var plan = _mealPlansRepository.GetById(id);
+            var plan = await _mealPlansRepository.GetByIdAsync(id);
             if (plan == null)
                 return null;
 
@@ -47,9 +47,9 @@ namespace Projeto_Nutri.Application.Service
             return dto;
         }
 
-        public IEnumerable<MealPlansDTO> GetAll()
+        public async Task<IEnumerable<MealPlansDTO>> GetAllAsync()
         {
-            var plans = _mealPlansRepository.GetAll();
+            var plans = await _mealPlansRepository.GetAllAsync();
 
             return plans.Select(p => new MealPlansDTO
             {
@@ -60,9 +60,9 @@ namespace Projeto_Nutri.Application.Service
             });
         }
 
-        public MealPlans Create(MealPlanCreateDTO dto)
+        public async Task<MealPlans> CreateAsync(MealPlanCreateDTO dto)
         {
-            var patient = _patientsRepository.GetById(dto.PatientId);
+            var patient = await _patientsRepository.GetByIdAsync(dto.PatientId);
             if (patient == null)
                 throw new Exception("Paciente não encontrado.");
 
@@ -70,7 +70,7 @@ namespace Projeto_Nutri.Application.Service
 
             foreach (var item in dto.Alimentos)
             {
-                var food = _foodsRepository.GetById(item.FoodId);
+                var food = await _foodsRepository.GetByIdAsync(item.FoodId);
                 if (food == null)
                     throw new Exception($"Alimento com ID {item.FoodId} não encontrado.");
 
@@ -78,25 +78,23 @@ namespace Projeto_Nutri.Application.Service
                 {
                     FoodId = item.FoodId,
                     TamanhoDaPorcaoEmGramas = item.TamanhoDaPorcaoEmGramas,
-                    MealPlan = mealPlan // <- isso já associa corretamente a entidade
+                    MealPlan = mealPlan
                 });
-
             }
 
-            _mealPlansRepository.Create(mealPlan);
+            await _mealPlansRepository.CreateAsync(mealPlan);
             return mealPlan;
         }
 
-        public void Delete(int id)
+        public async Task DeleteAsync(int id)
         {
-            _mealPlansRepository.Delete(id);
+            await _mealPlansRepository.DeleteAsync(id);
         }
 
-
-        //retorna apenas o plano de hoje
-        public List<MealPlansDTO> GetTodayMealPlansByPatientId(int patientId)
+        public async Task<List<MealPlansDTO>> GetTodayMealPlansByPatientIdAsync(int patientId)
         {
-            var plans = _mealPlansRepository.GetAll()
+            var allPlans = await _mealPlansRepository.GetAllAsync();
+            var plans = allPlans
                 .Where(p => p.PatientId == patientId && p.DataCriacao.Date == DateTime.Today)
                 .ToList();
 
@@ -123,6 +121,5 @@ namespace Projeto_Nutri.Application.Service
 
             return dtos;
         }
-
     }
 }

@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projeto_Nutri.Application",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projeto_Nutri.API", "Projeto_Nutri.API1\Projeto_Nutri.API.csproj", "{9B4BF621-A332-423D-8D5A-8C770C6FB6AF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projeto_Nutri.Tests", "Projeto_Nutri.Tests\Projeto_Nutri.Tests.csproj", "{2BE8589C-B6B2-45B0-BACC-76419210A692}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{9B4BF621-A332-423D-8D5A-8C770C6FB6AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B4BF621-A332-423D-8D5A-8C770C6FB6AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B4BF621-A332-423D-8D5A-8C770C6FB6AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BE8589C-B6B2-45B0-BACC-76419210A692}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BE8589C-B6B2-45B0-BACC-76419210A692}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BE8589C-B6B2-45B0-BACC-76419210A692}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BE8589C-B6B2-45B0-BACC-76419210A692}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

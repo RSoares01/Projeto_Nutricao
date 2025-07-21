@@ -1,10 +1,10 @@
-﻿using Projeto_Nutri.Domain.Entity;
+﻿using Microsoft.EntityFrameworkCore;
+using Projeto_Nutri.Domain.Entity;
 using Projeto_Nutri.Infrastructure.Context;
 using Projeto_Nutri.Infrastructure.IRepository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Projeto_Nutri.Infrastructure.Repository
@@ -20,37 +20,44 @@ namespace Projeto_Nutri.Infrastructure.Repository
             _context = context;
         }
 
-        public Patients GetById(int id)
+        public async Task<Patients?> GetByIdAsync(int id)
         {
-            return Context.Patients.FirstOrDefault(f => f.Id == id);
+            return await Context.Patients.FirstOrDefaultAsync(f => f.Id == id);
         }
 
-        public IEnumerable<Patients> GetAll()
+        public async Task<IEnumerable<Patients>> GetAllAsync()
         {
-            return Context.Patients.ToList();
+            return await Context.Patients.ToListAsync();
         }
 
-        public void Create(Patients patients)
+        public async Task CreateAsync(Patients patients)
         {
-            Context.Patients.Add(patients);
-            Context.SaveChanges();
+            await Context.Patients.AddAsync(patients);
+            await Context.SaveChangesAsync();
         }
 
-        public void Update(Patients patients)
+        public async Task UpdateAsync(Patients patients)
         {
             Context.Patients.Update(patients);
-            Context.SaveChanges();
+            await Context.SaveChangesAsync();
         }
 
-        public void Delete(int id)
+        public async Task DeleteAsync(int id)
         {
-            var patient = Context.Patients.FirstOrDefault(p => p.Id == id);
+            var patient = await Context.Patients.FirstOrDefaultAsync(p => p.Id == id);
             if (patient != null)
             {
                 patient.IsDeleted = true;
-                Context.SaveChanges();
+                await Context.SaveChangesAsync();
             }
         }
 
+        public async Task<IEnumerable<MealPlans>> GetTodayByPatientIdAsync(int patientId)
+        {
+            var today = DateTime.Today;
+            return await _context.MealPlans
+                .Where(mp => mp.PatientId == patientId && mp.DataCriacao.Date == today)
+                .ToListAsync();
+        }
     }
 }

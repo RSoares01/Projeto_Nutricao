@@ -20,14 +20,14 @@ namespace Projeto_Nutri.API.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetAll([FromQuery] int page = 1, [FromQuery] int pageSize = 10, [FromQuery] string? search = null)
+        public async Task<IActionResult> GetAll([FromQuery] int page = 1, [FromQuery] int pageSize = 10, [FromQuery] string? search = null)
         {
             try
             {
                 if (page < 1) page = 1;
                 if (pageSize < 1) pageSize = 10;
 
-                List<MealPlansDTO> allPlans = _service.GetAll().ToList();
+                var allPlans = (await _service.GetAllAsync()).ToList();
 
                 if (!string.IsNullOrWhiteSpace(search))
                     allPlans = allPlans
@@ -58,15 +58,12 @@ namespace Projeto_Nutri.API.Controllers
             }
         }
 
-
-
-        // GET /mealplans/{id}
         [HttpGet("{id}")]
-        public IActionResult GetById(int id)
+        public async Task<IActionResult> GetById(int id)
         {
             try
             {
-                var plan = _service.GetById(id);
+                var plan = await _service.GetByIdAsync(id);
                 if (plan == null)
                     return NotFound(new { message = $"Plano alimentar com ID {id} não encontrado." });
 
@@ -78,18 +75,17 @@ namespace Projeto_Nutri.API.Controllers
             }
         }
 
-        // POST /mealplans (somente ADMIN)
         [HttpPost]
         [Authorize(Roles = "ADMIN")]
-        public IActionResult Create([FromBody] MealPlanCreateDTO dto)
+        public async Task<IActionResult> Create([FromBody] MealPlanCreateDTO dto)
         {
             if (dto == null)
                 return BadRequest(new { error = "Dados do plano alimentar não podem ser nulos." });
 
             try
             {
-                var created = _service.Create(dto);
-                var createdDto = _service.GetById(created.Id); // evita retorno incompleto
+                var created = await _service.CreateAsync(dto);
+                var createdDto = await _service.GetByIdAsync(created.Id);
 
                 return CreatedAtAction(nameof(GetById), new { id = created.Id }, createdDto);
             }
@@ -103,18 +99,17 @@ namespace Projeto_Nutri.API.Controllers
             }
         }
 
-        // DELETE /mealplans/{id} (somente ADMIN)
         [HttpDelete("{id}")]
         [Authorize(Roles = "ADMIN")]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
             try
             {
-                var existing = _service.GetById(id);
+                var existing = await _service.GetByIdAsync(id);
                 if (existing == null)
                     return NotFound(new { message = $"Plano alimentar com ID {id} não encontrado." });
 
-                _service.Delete(id);
+                await _service.DeleteAsync(id);
                 return NoContent();
             }
             catch (Exception ex)
@@ -123,13 +118,12 @@ namespace Projeto_Nutri.API.Controllers
             }
         }
 
-        // GET /patients/{Idpatient}/mealplans/today
         [HttpGet("/patients/{id}/mealplans/today")]
-        public IActionResult GetTodayByPatientId(int id)
+        public async Task<IActionResult> GetTodayByPatientId(int id)
         {
             try
             {
-                var plans = _service.GetTodayMealPlansByPatientId(id);
+                var plans = await _service.GetTodayMealPlansByPatientIdAsync(id);
 
                 if (plans == null || !plans.Any())
                     return NotFound(new { message = $"Nenhum plano encontrado para hoje para o paciente {id}." });
